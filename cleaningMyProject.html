@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home Cleaning Services - Hyderabad</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Header -->
+  <header class="bg-white shadow-md fixed top-0 w-full z-50">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-600">CleanMyHome</h1>
+      <div class="flex items-center gap-4">
+        <!-- Main City -->
+        <select id="location" class="px-3 py-1 border rounded-md">
+          <option value="Hyderabad" selected>Hyderabad</option>
+        </select>
+        <!-- Sub-location -->
+        <select id="sublocation" class="px-3 py-1 border rounded-md">
+          <option value="">Select Sub-location</option>
+          <option>Narayanaguda</option>
+          <option>Kachiguda</option>
+          <option>Cheppal Bazar</option>
+        </select>
+      </div>
+      <a href="#book" class="bg-blue-600 text-white px-4 py-2 rounded-md">Book Now</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="pt-24 pb-16 relative bg-gray-50">
+    <!-- Background Image -->
+    <div class="absolute inset-0">
+      <img src="https://images.unsplash.com/photo-1581574203179-11c9f5a09c77?auto=format&fit=crop&w=1470&q=80"
+           alt="Cleaning Background"
+           class="w-full h-full object-cover opacity-30" />
+    </div>
+
+    <!-- Content -->
+    <div class="relative max-w-7xl mx-auto px-4 text-center md:text-left">
+      <h2 class="text-4xl font-bold text-gray-800 mb-4">
+        Professional Home Cleaning in <span id="cityName">Hyderabad</span>
+      </h2>
+      <p class="text-lg text-gray-600 mb-6">
+        Trusted cleaners, flexible slots & affordable prices.
+      </p>
+      <a href="#book"
+        class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-700">
+        Get Started
+      </a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="max-w-6xl mx-auto px-4 py-12 grid md:grid-cols-3 gap-6">
+    <div class="bg-white shadow-md rounded-lg p-6">
+      <h3 class="text-xl font-semibold mb-2">Rooms & Bathroom Cleaning</h3>
+      <p class="text-gray-600">Deep cleaning for 1BHK / 2BHK / 3BHK homes with eco-friendly products.</p>
+    </div>
+    <div class="bg-white shadow-md rounded-lg p-6">
+      <h3 class="text-xl font-semibold mb-2">Kitchen Cleaning</h3>
+      <p class="text-gray-600">Intensive scrubbing & sanitization for kitchens.</p>
+    </div>
+    <div class="bg-white shadow-md rounded-lg p-6">
+      <h3 class="text-xl font-semibold mb-2">Custom Cleaning</h3>
+      <p class="text-gray-600">Tell us your specific cleaning requirements and we’ll take care of it.</p>
+    </div>
+  </section>
+
+  <!-- Booking Section -->
+  <section id="book" class="bg-blue-600 py-12">
+    <div class="max-w-3xl mx-auto text-center text-white">
+      <h2 class="text-3xl font-bold mb-4">Book Your Cleaning Now</h2>
+      <form id="bookingForm" class="bg-white p-6 rounded-lg text-gray-800 shadow-md space-y-4">
+        <input type="text" name="name" placeholder="Your Name" class="w-full p-3 border rounded-md" required>
+        <input type="text" name="phone" placeholder="Phone Number" class="w-full p-3 border rounded-md" required>
+        <select id="serviceSelect" name="service" class="w-full p-3 border rounded-md" required>
+          <option value="">Select Service</option>
+          <option>Rooms & Bathroom Cleaning</option>
+          <option>Kitchen Cleaning</option>
+          <option>Custom Cleaning</option>
+        </select>
+        <input type="text" id="customInput" name="custom" placeholder="Enter your custom cleaning requirement"
+               class="w-full p-3 border rounded-md hidden">
+        <button type="submit" class="bg-blue-600 w-full py-3 text-white rounded-md hover:bg-blue-700">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section id="contact" class="bg-gray-100 py-12">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-6 text-gray-800">Contact Us</h2>
+      <p class="text-gray-700 mb-4">We’d love to hear from you! Reach out via phone or email.</p>
+      <div class="flex flex-col md:flex-row justify-center items-center gap-8 mt-6">
+        <div class="flex items-center gap-2 text-gray-700">
+          <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 5h2M3 10h2M3 15h2M3 20h2M9 5h12M9 10h12M9 15h12M9 20h12" />
+          </svg>
+          <a href="tel:+91829782595" class="hover:text-blue-600 font-medium">8297825953</a>
+        </div>
+        <div class="flex items-center gap-2 text-gray-700">
+          <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M16 12H8m8 0v8m0-8L12 16m4-4H8m0 0v8m0-8L4 16" />
+          </svg>
+          <a href="mailto:n19096775@gmail.com" class="hover:text-blue-600 font-medium">n19096775@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6 text-center relative">
+    <p>&copy; 2025 CleanMyHome. All Rights Reserved.</p>
+    <button id="footerContactBtn" class="mt-2 text-blue-400 hover:text-blue-200 focus:outline-none relative">
+      Contact Us
+      <span id="footerTooltip"
+            class="absolute bottom-10 left-1/2 -translate-x-1/2 bg-gray-700 text-white text-sm px-4 py-2 rounded-lg opacity-0 pointer-events-none transition-opacity">
+        📞 8297825953<br>✉️ n19096775@gmail.com
+      </span>
+    </button>
+  </footer>
+
+  <script>
+    // Dynamic city and sub-location
+    const locationSelect = document.getElementById("location");
+    const sublocationSelect = document.getElementById("sublocation");
+    const cityName = document.getElementById("cityName");
+    const serviceSelect = document.getElementById("serviceSelect");
+    const customInput = document.getElementById("customInput");
+
+    function updateCityName() {
+      let sub = sublocationSelect.value ? ` - ${sublocationSelect.value}` : '';
+      cityName.textContent = locationSelect.value + sub;
+      document.title = `Home Cleaning Services - ${locationSelect.value}${sub}`;
+    }
+
+    locationSelect.addEventListener("change", updateCityName);
+    sublocationSelect.addEventListener("change", updateCityName);
+
+    serviceSelect.addEventListener("change", () => {
+      if(serviceSelect.value === "Custom Cleaning") {
+        customInput.classList.remove("hidden");
+      } else {
+        customInput.classList.add("hidden");
+        customInput.value = '';
+      }
+    });
+
+    // Footer tooltip
+    const footerBtn = document.getElementById("footerContactBtn");
+    const tooltip = document.getElementById("footerTooltip");
+
+    footerBtn.addEventListener("click", () => {
+      tooltip.classList.toggle("opacity-100");
+      tooltip.classList.toggle("opacity-0");
+    });
+
+    // Google Sheets form submission
+    const form = document.getElementById("bookingForm");
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const data = {
+        name: form.name.value,
+        phone: form.phone.value,
+        service: form.service.value,
+        custom: form.custom.value,
+        city: locationSelect.value,
+        subLocation: sublocationSelect.value
+      };
+      fetch("YOUR_GOOGLE_APPS_SCRIPT_URL", {
+        method: "POST",
+        body: JSON.stringify(data)
+      })
+      .then(res => res.json())
+      .then(() => {
+        alert("Booking submitted successfully!");
+        form.reset();
+        customInput.classList.add("hidden");
+      })
+      .catch(err => {
+        console.error(err);
+        alert("Failed to submit. Try again.");
+      });
+    });
+  </script>
+</body>
+</html>
